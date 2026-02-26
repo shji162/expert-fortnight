@@ -19,7 +19,9 @@ export const EmailConfirmationPage = () => {
 
   useEffect(() => {
     if (!token) return
-    confirmMutation.mutate(token)
+      setTimeout(() => {
+        confirmMutation.mutate(token)
+    }, 5000)
   }, [confirmMutation, token])
 
   const isLoading = confirmMutation.isPending
