@@ -10,8 +10,8 @@ export default new class backendRoutes {
     depositesRoute = this.mainRoute + "deposites/"
     historyRoute = this.mainRoute + "history/"
 
-    emailConfirmationRoute = "email-confirmation"
-    passwordRecoveryRoute =  "password-recovery/"
+    emailConfirmationRoute = this.mainRoute + "email-confirmation/"
+    passwordRecoveryRoute = this.mainRoute + "password-recovery/"
     registerRoute = "register"
     loginRoute = "login"
     refreshRoute = "refresh"
@@ -19,7 +19,7 @@ export default new class backendRoutes {
     getAllUsersRoute = "all"
     getDepositesByAuctionIdRoute = "auction-id"
 
-    resetPasswordRoute = this.passwordRecoveryRoute + "reset-password"
-    newPasswordRoute = this.passwordRecoveryRoute + "new-password"
+    resetPasswordRoute = "reset-password"
+    newPasswordRoute = "new-password"
     
 }
