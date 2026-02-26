@@ -17,15 +17,15 @@ export default new (class authMethods {
   }
 
   async confirm(token: string) {
-    return await hosts.$authHost.post(backendRoutes.emailConfirmationRoute, { token })
+    return await hosts.$emailConfirmationHost.post('', { token })
   }
 
   async resetPassword(email: string) {
-    return await hosts.$authHost.post(backendRoutes.resetPasswordRoute, { email })
+    return await hosts.$passwordRecoveryHost.post(backendRoutes.resetPasswordRoute, { email })
   }
 
   async newPassword(password: string, token: string) {
-    return await hosts.$authHost.post(
+    return await hosts.$passwordRecoveryHost.post(
       backendRoutes.newPasswordRoute,
       { password },
       { params: { token } },
