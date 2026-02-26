@@ -10,8 +10,8 @@ export default new class backendRoutes {
     depositesRoute = this.mainRoute + "deposites/"
     historyRoute = this.mainRoute + "history/"
 
-    emailConfirmationRoute = this.mainRoute + "email-confirmation/"
-    passwordRecoveryRoute = this.mainRoute + "password-recovery/"
+    emailConfirmationRoute = this.mainRoute + "confirmation"
+    passwordRecoveryRoute = this.mainRoute + "recovery/"
     registerRoute = "register"
     loginRoute = "login"
     refreshRoute = "refresh"
