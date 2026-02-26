@@ -1,6 +1,6 @@
 
 export default new class backendRoutes {
-    private mainRoute = "https://server-jx100qpv8-shji162s-projects.vercel.app/"
+    private mainRoute = "https://server-8p8j30qac-shji162s-projects.vercel.app/"
 
     authRoute = this.mainRoute + "auth/"
     usersRoute = this.mainRoute + "users/"
