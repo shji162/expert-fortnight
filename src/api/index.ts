@@ -24,4 +24,6 @@ export default new class hosts {
     $ratesHost = this.createHost(backendRoutes.ratesRoute)
     $mediaHost = this.createHost(backendRoutes.mediaRoute)
     $historyHost = this.createHost(backendRoutes.authRoute)
+     $emailConfirmationHost = this.createHost(backendRoutes.emailConfirmationRoute)
+    $passwordRecoveryHost = this.createHost(backendRoutes.passwordRecoveryRoute)
 }
