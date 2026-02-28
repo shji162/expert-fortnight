@@ -1,0 +1,295 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 40px;
+  background: var(--bg, #f8f7f4);
+  color: var(--text, #1a1a1a);
+  font-family: var(--font-body, "Inter", system-ui, sans-serif);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding: 32px;
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border, #e0ded9);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  align-self: flex-start;
+  padding: 0;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted, #6b6b6b);
+}
+
+.title {
+  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif);
+  color: var(--text, #1a1a1a);
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted, #6b6b6b);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.emptyText {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted, #6b6b6b);
+}
+
+.cardItem {
+  padding: 20px;
+  border: 1px solid var(--border, #e0ded9);
+  background: var(--bg-card, #ffffff);
+}
+
+.cardItemHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.cardItemLabel {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text, #1a1a1a);
+}
+
+.cardItemValue {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--text, #1a1a1a);
+}
+
+.cardItemValueStrong {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text, #1a1a1a);
+}
+
+.cardItemActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.primaryButton,
+.secondaryButton,
+.dangerButton {
+  padding: 10px 20px;
+  border: 1px solid var(--text, #1a1a1a);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.primaryButton {
+  color: #ffffff;
+  background: var(--text, #1a1a1a);
+}
+
+.primaryButton:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: var(--text, #1a1a1a);
+}
+
+.secondaryButton:hover:not(:disabled) {
+  background: var(--bg, #f8f7f4);
+}
+
+.dangerButton {
+  background: transparent;
+  color: var(--text, #1a1a1a);
+  border-color: #8b0000;
+}
+
+.dangerButton:hover:not(:disabled) {
+  background: #fff0f0;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled,
+.dangerButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.inlineModal {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border, #e0ded9);
+}
+
+.formInline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field,
+.fieldInline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text, #1a1a1a);
+}
+
+.input {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--border, #e0ded9);
+  background: var(--bg-card, #ffffff);
+  color: var(--text, #1a1a1a);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder {
+  color: var(--text-muted, #6b6b6b);
+}
+
+.input:focus {
+  border-color: var(--text, #1a1a1a);
+}
+
+.error {
+  margin: 0;
+  font-size: 12px;
+  color: #8b0000;
+}
+
+.apiError {
+  margin-top: 4px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #8b0000;
+  background: #faf0f0;
+  border: 1px solid #e8d4d4;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 40;
+}
+
+.modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 28px;
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border, #e0ded9);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif);
+  color: var(--text, #1a1a1a);
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border, #e0ded9);
+  background: transparent;
+  color: var(--text-muted, #6b6b6b);
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.closeButton:hover {
+  border-color: var(--text, #1a1a1a);
+  color: var(--text, #1a1a1a);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.modalActions,
+.inlineActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    padding: 24px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
