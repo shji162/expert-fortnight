@@ -59,12 +59,12 @@
 
 .searchInput {
   width: 240px;
-  height: 40px;
+  height: 44px;
   padding: 0 14px;
   border: 1px solid var(--border, #e0ded9);
   background: var(--bg-card, #ffffff);
   color: var(--text, #1a1a1a);
-  font-size: 13px;
+  font-size: 14px;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -80,7 +80,7 @@
 .primaryButton,
 .secondaryButton {
   padding: 10px 20px;
-  border: 1px solid var(--accent, #1a1a1a);
+  border: 1px solid var(--text, #1a1a1a);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -89,7 +89,7 @@
 
 .primaryButton {
   color: #ffffff;
-  background: var(--accent, #1a1a1a);
+  background: var(--text, #1a1a1a);
 }
 
 .primaryButton:hover:not(:disabled) {

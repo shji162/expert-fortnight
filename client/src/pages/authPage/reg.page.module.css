@@ -121,7 +121,7 @@
 .submitButton {
   margin-top: 8px;
   height: 48px;
-  border: 1px solid var(--accent, #1a1a1a);
+  border: 1px solid var(--text, #1a1a1a);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@
   text-transform: uppercase;
   cursor: pointer;
   color: #ffffff;
-  background: var(--accent, #1a1a1a);
+  background: var(--text, #1a1a1a);
   transition: opacity 0.2s;
 }
 
